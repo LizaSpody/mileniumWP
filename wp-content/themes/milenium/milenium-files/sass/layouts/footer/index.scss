@@ -1,0 +1,257 @@
+footer{
+  background-color: $dark_background;
+  margin-top: 60rem;
+  color: $text_color_light;
+  .container{
+    display: flex;
+    padding: 30rem 40rem 40rem 60rem;
+  }
+}
+.footer_logo{
+  font-size: 37rem;
+  margin-bottom: 17rem;
+  display: block;
+}
+.footer_info{
+  font-family: "SpaceGrotesk-Regular";
+  font-size: 12rem;
+  line-height: 160%;
+  color: #E3E3E3;
+  margin: 0;
+}
+
+.footer_title{
+  margin-top: 11rem;
+  font-weight: 500;
+  font-size: 15rem;
+  font-family: "SpaceGrotesk-Medium";
+  text-transform: uppercase;
+  margin-bottom: 35rem;
+}
+
+.footer_company{
+  width: 255rem;
+}
+
+.footer_adress{
+  margin-left: 288rem;
+}
+
+.footer_contacct{
+  margin-left: 155rem;
+  margin-right: 145rem;
+}
+.footer_follow{
+  width: 250rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .footer_title{
+    width: 100%;
+    margin-bottom: 30rem;
+  }
+  a{
+    font-size: 20rem;
+    display: block;
+    min-width: 35rem;
+    min-height: 35rem;
+    &:hover{
+      font-size: 24rem;
+    }
+  }
+}
+@media #{$mediaExtraLarge} and #{$media_1500}{
+  footer .container {
+    padding: 20rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    lign-items: flex-start;
+
+    div {
+      width: 16%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .footer_logo {
+    font-size: 14rem;
+  }
+  .footer_info {
+    font-size: 11rem;
+    margin-top: 10rem;
+  }
+  .footer_title {
+    margin-bottom: 0rem;
+    margin-top: 20rem;
+  }
+  .footer_follow .footer_title {
+    margin-bottom: 10rem;
+  }
+  .footer_follow_lonk {
+    width: 24rem;
+    min-width: 24rem!important;
+    i {
+      font-size: 16rem;
+    }
+  }
+}
+
+@media #{$mediaLarge} {
+  footer .container {
+    padding: 20rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    lign-items: flex-start;
+
+    div {
+      width: 16%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .footer_logo {
+    font-size: 14rem;
+  }
+  .footer_info {
+    font-size: 11rem;
+    margin-top: 10rem;
+  }
+  .footer_title {
+    margin-bottom: 0rem;
+    margin-top: 20rem;
+  }
+  .footer_follow .footer_title {
+    margin-bottom: 10rem;
+  }
+  .footer_follow_lonk {
+    width: 24rem;
+    min-width: 24rem!important;
+    i {
+      font-size: 16rem;
+    }
+  }
+}
+@media #{$mediaMedium}{
+  footer{
+    margin-top: 30rem;
+  }
+  footer .container {
+    padding: 20rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    div {
+      width: 40%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .footer_logo {
+    font-size: 14rem;
+  }
+  .footer_info {
+    font-size: 11rem;
+    margin-top: 10rem;
+  }
+  .footer_title {
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+  }
+  .footer_follow .footer_title {
+    margin-bottom: 10rem;
+  }
+  .footer_follow_lonk {
+    width: 24rem;
+    min-width: 24rem!important;
+    i {
+      font-size: 16rem;
+    }
+  }
+  .footer_company{
+    order: 1;
+    margin-bottom: 15rem;
+  }
+  .footer_follow{
+    order: 2;
+    margin-bottom: 15rem;
+  }
+  .footer_contacct{
+    order: 3;
+  }
+  .footer_adress{
+    order: 4;
+  }
+  .footer_follow .footer_title{
+    margin-top: 0;
+    margin-bottom: 20rem;
+  }
+}
+@media #{$mediaSmall}{
+  footer .container {
+    padding: 20rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    div {
+      width: 40%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .footer_logo {
+    font-size: 14rem;
+  }
+  .footer_info {
+    font-size: 11rem;
+    margin-top: 10rem;
+  }
+  .footer_title {
+    margin-bottom: 0rem;
+    margin-top: 20rem;
+  }
+  .footer_follow_lonk {
+    width: 24rem;
+    min-width: 24rem!important;
+    i {
+      font-size: 16rem;
+    }
+  }
+}
+@media #{$mediaExtraSmall} {
+  footer .container {
+    padding: 20rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    div {
+      width: 40%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .footer_logo {
+    font-size: 14rem;
+  }
+  .footer_info {
+    font-size: 8rem;
+    margin-top: 10rem;
+  }
+  .footer_title {
+    margin-bottom: 0rem;
+    margin-top: 20rem;
+  }
+  .footer_follow_lonk {
+    width: 24rem;
+    min-width: 24rem!important;
+      i {
+    font-size: 16rem;
+  }
+}
+}
+
+.single-page footer .logo{
+  color: $topic_title;
+}

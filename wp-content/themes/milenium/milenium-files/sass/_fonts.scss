@@ -1,0 +1,9 @@
+/* Fonts */
+
+@include font-face(SpaceGrotesk-Regular, "fonts/spaceGrotesk-normal/SpaceGrotesk-Regular", 400, normal, otf woff2 woff ttf);
+@include font-face(SpaceGrotesk-Medium, "fonts/spaceGrotesk-medium/SpaceGrotesk-Medium", 400, normal, otf woff ttf);
+@include font-face(GTWalsheimPro-Regular, "fonts/GTWalsheimPro-Regular/GTWalsheimPro-Regular", 400, normal, eot woff2 woff ttf);
+@include font-face(GTWalsheimPro-Medium, "fonts/GTWalsheimPro-Medium/GTWalsheimPro-Medium", 500, normal, eot woff2 woff ttf);
+@include font-face(BigJohn, "fonts/bigJohn/BIGJOHN", 400, normal, otf);
+
+@include font-face(Icomoon, "fonts/icomoon/icomoon", 400, normal, eot svg ttf);

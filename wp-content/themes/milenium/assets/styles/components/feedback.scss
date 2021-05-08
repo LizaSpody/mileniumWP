@@ -1,0 +1,324 @@
+/* Component feeadback */
+@import "../vars";
+@import "../mixins";
+
+.feedback{
+  margin-top: 60rem;
+  background-color: $dark_background;
+  .container{
+    padding: 60rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.section_feedback_title{
+  .bgc_text{
+    right: -23%;
+  }
+}
+
+.feedback_title{
+  color: $title_color_white;
+  font-size: 32rem;
+  text-transform: capitalize;
+  font-family: 'GTWalsheimPro-Medium';
+  margin: 0 0 25rem;
+}
+
+.feedback_text{
+  font-size: 14rem;
+  line-height: 165%;
+  width: 353rem;
+  color: $text_color_light;
+  font-family: 'SpaceGrotesk-Regular';
+}
+
+.feedback_item{
+  width: 330rem;
+  height: 288rem;
+  background-color: $feedback_item;
+  position: relative;
+  padding: 35rem 30rem 45rem 29rem;
+}
+
+.icon-right-quote:before {
+  content: "\e904";
+  color: $title_color_white;
+  font-size: 41rem;
+}
+
+.icon-right-quote{
+  position: absolute;
+  top: 10rem;
+  right: 10rem;
+}
+
+.feedback_item_title{
+  margin-top: 0;
+  margin-bottom: 25rem;
+  color: $feedback_item_title;
+  font-family: 'GTWalsheimPro-Medium';
+  font-size: 22rem;
+}
+
+.feedback_item_text{
+  color: $text_color_dark;
+  font-family: 'SpaceGrotesk-Medium';
+  font-size: 14rem;
+  line-height: 165%;
+  margin: 0 0 23rem;
+}
+
+.feedback_slider{
+  width: 720rem;
+  .slick-prev::before, .slick-next::before{
+    content: '\e907';
+    color: $title_color_white;
+    font-family: 'icomoon' !important;
+    font-size: 13rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -30rem;
+  }
+  .slick-prev::before{
+    left: -115rem;
+    transform: rotate(-180deg);
+  }
+  .slick-next{
+    left: -275rem;
+    right: auto;
+  }
+  .slick-prev{
+    left: -350rem;
+  }
+  .slick-prev, .slick-next{
+    bottom: 0;
+    top: auto;
+    font-size: 16rem;
+    color: $title_color_white;
+    width: 40rem;
+    height: 13rem;
+    text-transform: uppercase;
+  }
+}
+.slick-slide{
+  display: inline-block;
+}
+.feedback_item_person{
+  display: flex;
+}
+.feedback_item_person_info{
+  margin-left: 15rem;
+  vertical-align: bottom;
+}
+
+.feedback_item_name{
+  color: $title_color;
+  font-size: 12rem;
+  font-family: 'SpaceGrotesk-Medium';
+}
+.feedback_item_company{
+  color: #5D5D5D;
+  font-size: 12rem;
+  font-family: 'SpaceGrotesk-Regular';
+  display: block;
+  margin-top: 10rem;
+}
+
+.feedback_item:nth-of-type(1){
+  margin-right: 60rem;
+}
+@media #{$mediaExtraLarge} and #{$media_1500}{
+  .feedback_content{
+    margin-right: 15px;
+  }
+}
+
+@media #{$mediaLarge}{
+  .feedback .container{
+    padding: 60px 0;
+  }
+  .feedback_slider {
+    width: 580px;
+  }
+}
+@media #{$mediaMedium} {
+  .feedback .container{
+    padding: 60px 0;
+  }
+  .feedback_slider {
+    width: 350px;
+  }
+}
+
+@media #{$mediaSmall}{
+  .feedback_title {
+    display: none;
+  }
+  .feedback_slider .slick-prev {
+    right: 90rem;
+    left: auto;
+    z-index: 4;
+  }
+  .feedback_slider .slick-next {
+    left: auto;
+    z-index: 4;
+    right: 30rem;
+  }
+  .feedback_item{
+    max-width: 95vw;
+  }
+  .feedback .container{
+    display: flex;
+    padding: 0 20rem;
+    flex-direction: column;
+  }
+  .feedback_text{
+    width: 100%;
+    margin-left: 60rem;
+    color: $text_color_dark;
+  }
+  .feedback_text:nth-of-type(1){
+    margin-top: -70rem;
+  }
+  .feedback_item{
+    margin: 0!important;
+    padding: 0 20rem 30rem 0;
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+  }
+  .feedback_item_title, .feedback_item_text, .feedback_item_name, .feedback_item_company{
+    color: white;
+  }
+  .feedback_item_title{
+    font-size: 15rem;
+  }
+  .feedback_item_text{
+    font-size: 12rem;
+  }
+  .feedback_item_name, .feedback_item_company{
+    font-size: 10rem;
+  }
+  .feedback_item_company{
+    opacity: 0.5;
+  }
+  .feedback{
+    background-image: none;
+    background-color: transparent;
+  }
+  .feedback_text{
+    margin-left: 90rem;
+    font-size: 12rem;
+    max-width: 100%;
+    width: auto;
+    margin-right: 0;
+  }
+  .feedback_slider{
+    margin-top: 30rem;
+    position: relative;
+    width: 100%;
+    &:before{
+      display: block;
+      content: '';
+      background-color: $dark_background;
+      height: 120%;
+      top: -10%;
+      width: 110vw;
+      position: absolute;
+      left: -30rem;
+    }
+  }
+  .icon-right-quote{
+    top: 0;
+    right: 0;
+  }
+}
+
+@media #{$mediaExtraSmall} {
+  .section_feedback_title .section_title{
+    margin-top: 10rem;
+  }
+  .feedback_title {
+    display: none;
+  }
+  .feedback_slider .slick-prev {
+    right: 90rem;
+    left: auto;
+  }
+  .feedback_slider .slick-next {
+    left: auto;
+    right: 30rem;
+  }
+  .feedback_item{
+    max-width: 95vw;
+  }
+  .feedback .container{
+    display: flex;
+    padding: 0 20rem;
+    flex-direction: column;
+  }
+  .feedback_text{
+    width: 100%;
+    margin-left: 60rem;
+    color: $text_color_dark;
+  }
+  .feedback_text:nth-of-type(1){
+    margin-top: -70rem;
+  }
+  .feedback_item{
+    margin: 0!important;
+    padding: 0 40rem 30rem 0;
+    height: auto;
+    width: 100%;
+    background-color: transparent;
+  }
+  .feedback_item_title, .feedback_item_text, .feedback_item_name, .feedback_item_company{
+    color: white;
+  }
+  .feedback_item_title{
+    font-size: 15rem;
+  }
+  .feedback_item_text{
+    font-size: 12rem;
+  }
+  .feedback_item_name, .feedback_item_company{
+    font-size: 10rem;
+  }
+  .feedback_item_company{
+    opacity: 0.5;
+  }
+  .feedback{
+    background-image: none;
+    background-color: transparent;
+  }
+  .feedback_text{
+    margin-left: 90rem;
+    font-size: 12rem;
+    max-width: 300rem;
+    width: auto;
+  }
+  .feedback_slider{
+    margin-top: 30rem;
+    position: relative;
+    &:before{
+      display: block;
+      content: '';
+      background-color: $dark_background;
+      height: 120%;
+      top: -10%;
+      width: 110vw;
+      position: absolute;
+      left: -30rem;
+    }
+  }
+  .feedback_slider .slick-prev::before, .feedback_slider .slick-next::before{
+    font-size: 11rem;
+  }
+}
+.slick-initialized .slick-slide{
+  margin-right: 30rem;
+}
+

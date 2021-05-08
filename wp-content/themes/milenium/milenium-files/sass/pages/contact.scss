@@ -1,0 +1,255 @@
+@import "../mixins";
+@import "../vars";
+
+.contact_section{
+  padding-top: 180rem;
+}
+.contact_section_bgc{
+  width: 100%;
+  img{
+    width: 100%;
+  }
+}
+.contact_section_block{
+  width: 1190rem;
+  padding: 68rem 64rem;
+  margin: -80rem auto 0;
+  position: relative;
+  background-color: $dark_background;
+  &_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 80rem;
+    .section_title{
+      margin: 0;
+      color: $contact_title;
+      width: 460rem;
+      font-size: 50rem;
+    }
+    p{
+      font-size: 14rem;
+      width: 460rem;
+      line-height: 165%;
+      color: $text_color_light;
+      font-family: SpaceGrotesk-Regular;
+    }
+  }
+  &_botton{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    &_inputs{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .contact_section_input{
+      width: 460rem;
+      border: none;
+      background-color: transparent;
+      border-bottom: 1px solid $border_bottom;
+      margin-bottom: 40rem;
+      font-size: 14rem;
+      padding: 7rem 0;
+      color: #5D5D5D;
+      font-family: 'SpaceGrotesk-Regular';
+      &::placeholder{
+        color: $text_color_light
+      }
+    }
+    .contact_section_btn{
+      width: 160rem;
+      margin-top: 60rem;
+      text-transform: uppercase;
+      color: $contact_title;
+      font-size: 16rem;
+      border: none;
+      font-family: 'SpaceGrotesk-Regular';
+      background-color: transparent;
+      i{
+        margin-left: 15rem;
+        color: $contact_title;
+        font-size: 12rem;
+      }
+    }
+  }
+
+}
+
+.map_section{
+  margin-top: 100rem;
+  padding-bottom: 100rem;
+  .container{
+    padding-top: 100rem;
+    position: relative;
+    height: 600rem;
+  }
+  iframe{
+    z-index: 8;
+  }
+  .adress_block{
+    position: absolute;
+    top: 0;
+    width: 460px;
+    left: 66rem;
+    z-index: 9;
+    background-color: $dark_background;
+    padding: 50rem 64rem 64rem;
+    &_title{
+      margin-top: 0;
+      color: $contact_title;
+      font-size: 22rem;
+      font-weight: 400;
+      position: relative;
+      padding-bottom: 30rem;
+      margin-bottom: 60rem;
+      font-family: 'GTWalsheimPro-Regular';
+      &:after {
+        content: '';
+        display: block;
+        background-color: $title_color_line;
+        width: 50rem;
+        position: absolute;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    .adress_block_row{
+      display: flex;
+      justify-content: space-between;
+    }
+    &_child{
+      width: 45%;
+      h5{
+        font-size: 16rem;
+        font-weight: 400;
+        color: $text_color_light;
+        font-family: "GTWalsheimPro-Regular";
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      p{
+        margin-top: 30px;
+        font-size: 14rem;
+        font-weight: 400;
+        color: $text_color_light;
+        font-family: "SpaceGrotesk-Regular";
+        line-height: 165%;
+      }
+    }
+  }
+}
+
+
+@media #{$mediaExtraLarge} and #{$media_1500}{
+  .contact_section_block{
+    width: 1150rem;
+  }
+}
+
+@media #{$mediaLarge} {
+  .contact_section_block{
+    width: 850rem;
+  }
+  .contact_section_block_top .section_title{
+    font-size: 40rem;
+  }
+  .contact_section_block_top p{
+    width: 420rem;
+  }
+  .contact_section_block_top{
+    margin-bottom: 30rem;
+  }
+  .contact_section_block_botton_inputs{
+    width: 100%;
+  }
+  .contact_section_block_botton .contact_section_input{
+    width: 45%;
+  }
+  .contact_section_block_botton .contact_section_btn{
+    margin-top: 30rem;
+  }
+  .map_section .adress_block{
+    padding: 20rem 35rem;
+    width: 420rem;
+    left: 50px;
+  }
+  .map_section .adress_block_title{
+    margin-bottom: 30rem;
+  }
+}
+
+@media #{$mediaMedium}{
+  .contact_section_block{
+    width: 90%;
+  }
+  .contact_section_block_top .section_title{
+    width: 45%;
+    font-size: 30rem;
+  }
+  .contact_section_block_top p{
+    width: 45%;
+    font-size: 13rem;
+  }
+}
+
+@media #{$mediaSmall} {
+  .contact_section .container{
+    padding: 0;
+  }
+  .contact_section_block {
+    width: calc(100% - 40rem);
+  }
+  .contact_section_block_top{
+    flex-wrap: wrap;
+  }
+  .contact_section_block_top .section_title{
+    width: 100%;
+  }
+  .contact_section_block_top p{
+    width: 100%;
+  }
+  .map_section .adress_block{
+    left: 20rem;
+  }
+  .map_section{
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .map_section .container{
+    padding: 100rem 0 0;
+  }
+}
+
+@media #{$mediaExtraSmall}{
+  .contact_section_block{
+    padding: 35rem 30rem;
+  }
+  .contact_section{
+    padding-top: 80rem;
+  }
+  .contact_section_block_botton .contact_section_input{
+    width: 100%;
+  }
+  .adress_block{
+    max-width: calc(100% - 40rem);
+  }
+  .map_section .adress_block_child p{
+    font-size: 12rem;
+    margin-top: 15rem;
+  }
+  .map_section .adress_block_title{
+    padding-bottom: 20rem;
+  }
+  .map_section .adress_block_child{
+    min-width: 160rem;
+  }
+  .map_section .adress_block .adress_block_row{
+    flex-wrap: wrap;
+  }
+  .map_section .container{
+    height: 460rem;
+  }
+}
