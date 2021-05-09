@@ -7,6 +7,7 @@
   background-image: linear-gradient(to bottom, $dark_background 900rem, $main_background calc(100% - 900rem));
   background-color: $dark_background;
   padding-top: 155rem;
+
   .container {
     padding: 0 125rem;
   }
@@ -20,7 +21,7 @@
 
 .topic_title {
   color: $topic_title;
-  font-family: "GTWalsheimPro-Regular";
+  font-family: "GTWalsheimPro-Regular", sans-serif;
   font-size: 200rem;
   margin: 0;
   text-transform: uppercase;
@@ -31,9 +32,7 @@
   letter-spacing: 0.05em;
   flex-wrap: wrap;
   line-height: 85%;
-  p {
 
-  }
   &_text {
     color: $text_color_light;
     display: inline-block;
@@ -42,12 +41,13 @@
     letter-spacing: normal;
     line-height: 165%;
     width: 175rem;
-    font-family: "SpaceGrotesk-Regular";
+    font-family: "SpaceGrotesk-Regular", sans-serif;
     padding-left: 16rem;
     transition: 1s;
     opacity: 0;
     visibility: hidden;
     transform: scale(0.1);
+
     &.active {
       opacity: 1;
       visibility: visible;
@@ -57,7 +57,7 @@
 }
 
 .topic_link {
-  font-family: "SpaceGrotesk-Regular";
+  font-family: "SpaceGrotesk-Regular", sans-serif;
   font-size: 14rem;
   letter-spacing: 0.05em;
   color: $text_color_light;
@@ -66,13 +66,15 @@
   display: flex;
   align-items: center;
   padding-bottom: 15rem;
+
   i {
     margin-left: 5rem;
     font-size: 10rem;
     display: block;
     margin-top: -4rem;
-    transition: .3s;
+    transition: 0.3s;
   }
+
   &:hover {
     i {
       transform: translate(5rem, 0);
@@ -89,26 +91,29 @@
   .topic .container {
     padding: 0;
   }
+
   .topic_title {
     width: 500px;
     font-size: 125rem;
   }
 }
 
-@media #{$mediaMedium}{
+@media #{$mediaMedium} {
   .topic .container {
     padding: 0;
   }
+
   .topic_title {
     width: 500px;
     font-size: 125rem;
   }
 }
 
-@media #{$mediaExtraLarge} and #{$media_1500}{
+@media #{$mediaExtraLarge} and #{$media_1500} {
   .topic .container {
     padding: 0 80rem;
   }
+
   .topic_title {
     width: 680rem;
   }
@@ -118,6 +123,7 @@
   .topic .container {
     padding: 0 20rem;
   }
+
   .topic_title p {
     max-width: 130rem;
     font-size: 9rem;
@@ -129,30 +135,36 @@
     width: 100%;
     font-size: 128rem;
   }
+
   .topic_text {
     flex-direction: column;
   }
+
   .topic {
     min-height: 100%;
     padding-top: 115rem;
     background-image: linear-gradient(to bottom, $dark_background 80%, $main_background 0%);
   }
+
   .topic_pic {
     width: 100%;
   }
+
   .topic_image {
     width: 100%;
     margin-top: 17rem;
   }
+
   .topic_link {
     margin-top: 40rem;
   }
 }
 
-@media #{$mediaExtraSmall}{
+@media #{$mediaExtraSmall} {
   .topic .container {
     padding: 0 20rem;
   }
+
   .topic_title p {
     max-width: 130rem;
     font-size: 8rem;
@@ -164,23 +176,27 @@
     width: 100%;
     font-size: 66rem;
   }
+
   .topic_text {
     flex-direction: column;
   }
+
   .topic {
     min-height: 100%;
     padding-top: 115rem;
     background-image: linear-gradient(to bottom, $dark_background 80%, $main_background 0%);
   }
+
   .topic_pic {
     width: 100%;
   }
+
   .topic_image {
     margin-top: 10rem;
     width: 100%;
   }
+
   .topic_link {
     margin-top: 40rem;
   }
 }
-

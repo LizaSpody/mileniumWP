@@ -1,6 +1,5 @@
 
-
-.menu{
+.menu {
   display: flex;
   position: fixed;
   z-index: 15;
@@ -12,33 +11,38 @@
   justify-content: center;
   align-items: center;
   transition: 1s;
-  &.active{
+
+  &.active {
     left: 0;
   }
 }
-.menu_title{
+
+.menu_title {
   color: $menu_color;
   font-size: 300rem;
   opacity: 0.4;
-  font-family: "GTWalsheimPro-Medium";
+  font-family: "GTWalsheimPro-Medium", sans-serif;
   letter-spacing: 0.05em;
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 60rem;
 }
-.menu_list{
+
+.menu_list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-.menu_item{
+
+.menu_item {
   margin-bottom: 30rem;
 }
-.menu_item span{
+
+.menu_item span {
   opacity: 0.8;
   color: $menu_color;
   padding-bottom: 8rem;
-  font-family: "GTWalsheimPro-Medium";
+  font-family: "GTWalsheimPro-Medium", sans-serif;
   font-weight: bold;
   font-size: 16rem;
   line-height: 17rem;
@@ -46,8 +50,9 @@
   text-transform: capitalize;
   margin-right: 40rem;
 }
-.menu_link{
-  font-family: "SpaceGrotesk-Medium";
+
+.menu_link {
+  font-family: "SpaceGrotesk-Medium", sans-serif;
   font-weight: bold;
   font-size: 22rem;
   line-height: 20rem;
@@ -55,26 +60,29 @@
   text-transform: uppercase;
   color: $text_color_light;
   opacity: 1;
-  text-transform: uppercase;
   text-decoration: none;
-  i{
+
+  i {
     font-size: 14rem;
     transform: rotate(90deg);
     display: inline-block;
     margin-left: 10rem;
   }
 }
-.premenu_list{
+
+.premenu_list {
   padding: 0;
   margin: 20rem 0 0 90rem;
 }
-.premenu_item{
+
+.premenu_item {
   list-style: none;
   padding-bottom: 6rem;
   margin-bottom: 12rem;
 }
-.premenu_link{
-  font-family: "SpaceGrotesk-Regular";
+
+.premenu_link {
+  font-family: "SpaceGrotesk-Regular", sans-serif;
   font-size: 14rem;
   line-height: 165%;
   letter-spacing: 0.05em;
@@ -82,48 +90,54 @@
   color: $text_color_light;
   text-decoration: none;
   opacity: 0.5;
-  text-transform: uppercase;
-
 }
 
 @media #{$mediaLarge} {
-  .menu_title{
+  .menu_title {
     font-size: 165rem;
   }
 }
 
 @media #{$mediaSmall} {
-  .menu_title{
+  .menu_title {
     font-size: 80rem;
   }
-  .menu_link{
+
+  .menu_link {
     font-size: 17rem;
   }
-  .premenu_link{
+
+  .premenu_link {
     font-size: 12rem;
   }
-  .premenu_item{
+
+  .premenu_item {
     margin-bottom: 4rem;
   }
-  .premenu_list{
+
+  .premenu_list {
     margin-top: 5rem;
   }
-  .menu_item{
+
+  .menu_item {
     margin-bottom: 10rem;
   }
 }
 
 @media #{$mediaExtraSmall} {
-  .menu_title{
+  .menu_title {
     display: none;
   }
-  .menu_link{
+
+  .menu_link {
     font-size: 22px;
   }
-  .menu_item{
+
+  .menu_item {
     margin-bottom: 30rem;
   }
-  .premenu_link{
+
+  .premenu_link {
     font-size: 14px;
   }
 }

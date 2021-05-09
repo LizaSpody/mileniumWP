@@ -1,4 +1,5 @@
 ///* Fonts */
+/* stylelint-disable */
 
 @include font-face(SpaceGrotesk-Regular, "../fonts/spaceGrotesk-normal/SpaceGrotesk-Regular", 400, normal, otf woff2 woff ttf);
 @include font-face(SpaceGrotesk-Medium, "../fonts/spaceGrotesk-medium/SpaceGrotesk-Medium", 400, normal, otf woff ttf);

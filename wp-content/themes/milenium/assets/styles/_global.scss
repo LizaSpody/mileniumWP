@@ -18,23 +18,24 @@ body {
   overflow-x: hidden;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-input, button{
+input,
+button {
   outline: none !important;
 }
 
-.icon-clock:before {
+.icon-clock::before {
   content: "\e94e";
 }
 
-.icon-eye:before {
+.icon-eye::before {
   content: "\e9ce";
 }
 
@@ -44,21 +45,22 @@ input, button{
   max-width: 1440rem;
   margin: 0 auto;
 }
-main{
+
+main {
   overflow: hidden;
 }
 
 .bgc_text {
   position: absolute;
   font-size: 80rem;
-  font-family: 'GTWalsheimPro-Regular';
+  font-family: 'GTWalsheimPro-Regular', sans-serif;
   color: $bgc_text;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
 .section_title {
-  font-family: 'GTWalsheimPro-Medium';
+  font-family: 'GTWalsheimPro-Medium', sans-serif;
   font-size: 60rem;
   margin-top: 50rem;
   font-weight: 500;
@@ -66,19 +68,24 @@ main{
   margin-bottom: 0;
   padding-bottom: 17rem;
   position: relative;
+
   &.blue {
     color: $title_color;
-    &:after {
+
+    &::after {
       background-color: $title_color_line;
     }
   }
+
   &.white {
     color: $title_color_white;
-    &:after {
+
+    &::after {
       background-color: $text_color_light;
     }
   }
-  &:after {
+
+  &::after {
     content: '';
     display: block;
     width: 100rem;
@@ -106,7 +113,7 @@ main{
 
 .quotes_text {
   margin-top: 0;
-  font-family: "SpaceGrotesk-Medium";
+  font-family: "SpaceGrotesk-Medium", sans-serif;
   font-size: 22rem;
   color: $text_color_dark;
   line-height: 165%;
@@ -114,14 +121,14 @@ main{
 
 .quotes_name {
   color: $title_color;
-  font-family: "SpaceGrotesk-Regular";
+  font-family: "SpaceGrotesk-Regular", sans-serif;
   font-size: 14rem;
   margin-bottom: 5rem;
 }
 
 .quotes_job {
   color: $grey;
-  font-family: "SpaceGrotesk-Regular";
+  font-family: "SpaceGrotesk-Regular", sans-serif;
   font-size: 14rem;
 }
 
@@ -129,68 +136,79 @@ main{
   width: 330rem;
   margin-left: 132rem;
 }
-@media #{$mediaExtraLarge} and #{$media_1500}{
+
+@media #{$mediaExtraLarge} and #{$media_1500} {
   .container {
     width: 1180px;
   }
 }
-@media #{$mediaLarge}{
+
+@media #{$mediaLarge} {
   .container {
     width: 950px;
     padding: 0 20rem;
   }
 }
 
-@media #{$mediaMedium}{
+@media #{$mediaMedium} {
   .container {
     width: 750px;
     padding: 0 20rem;
   }
+
   .section_title {
     font-size: 40rem;
     margin-left: 0;
+
     br {
       display: none;
     }
   }
+
   .bgc_text {
     display: none;
   }
 }
 
-@media #{$mediaSmall}{
+@media #{$mediaSmall} {
   .container {
     width: 100%;
     padding: 0 20rem;
   }
+
   .section_title {
     font-size: 40rem;
     margin-left: 0;
+
     br {
       display: none;
     }
   }
+
   .bgc_text {
     display: none;
   }
 }
-
 
 @media #{$mediaExtraSmall} {
   .container {
     width: 100%;
     padding: 0 20rem;
   }
+
   .section_title {
     font-size: 40rem;
     margin-left: 0;
+
     br {
       display: none;
     }
   }
-  .quotes .icon-left-quote{
+
+  .quotes .icon-left-quote {
     top: -20rem;
   }
+
   .bgc_text {
     display: none;
   }

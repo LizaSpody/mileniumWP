@@ -1,28 +1,27 @@
 /* Styles Header */
 @import "../../vars";
-@import "../../vars";
 
 header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-
   z-index: 25;
+
   .container {
     padding: 45rem 52rem 0 59rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
   }
+
   &.fixed {
     position: fixed;
   }
 }
 
 .logo {
-  font-family: "BigJohn";
+  font-family: "BigJohn", sans-serif;
   color: $text_color_light;
   font-size: 24rem;
   text-decoration: none;
@@ -40,6 +39,7 @@ header {
   align-items: flex-end;
   flex-direction: column;
   margin-bottom: 25rem;
+
   span {
     height: 2rem;
     display: block;
@@ -47,24 +47,26 @@ header {
     margin-bottom: 6rem;
     position: relative;
     overflow: hidden;
-    transition: .3s;
+    transition: 0.3s;
   }
+
   span:last-of-type {
     width: 16rem;
   }
+
   &.close {
     span {
       &:nth-child(1) {
         transform: rotate(-45deg);
         margin-bottom: 0;
         margin-top: 4rem;
-
       }
+
       &:nth-child(2) {
         transform: rotate(45deg);
         margin-top: -2rem;
-
       }
+
       &:nth-child(3) {
         visibility: hidden;
         opacity: 0;
@@ -72,7 +74,6 @@ header {
       }
     }
   }
-
 }
 
 .language {
@@ -85,7 +86,7 @@ header {
 
 .language_item {
   margin-bottom: 20rem;
-  font-family: "SpaceGrotesk-Medium";
+  font-family: "SpaceGrotesk-Medium", sans-serif;
   font-size: 14rem;
   line-height: 13rem;
   letter-spacing: 0.05em;
@@ -103,10 +104,6 @@ header {
   color: $text_color_dark;
 }
 
-.last-article .humburger span {
-
-}
-
 .single-page .logo {
   color: $text_color_dark;
 }
@@ -119,13 +116,15 @@ header {
   background-color: $text_color_dark;
 }
 
-@media #{$mediaExtraSmall}{
+@media #{$mediaExtraSmall} {
   .language {
     display: none;
   }
+
   .humburger {
     margin-top: 0;
   }
+
   header {
     .container {
       padding: 25rem 20rem;
@@ -133,7 +132,8 @@ header {
   }
 }
 
-.humburger span:before, .humburger span:after {
+.humburger span::before,
+.humburger span::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -143,32 +143,36 @@ header {
   transition: transform ease 300ms;
 }
 
-.humburger span:after {
+.humburger span::after {
   transform: translateX(0);
 }
 
-.humburger span:nth-child(2):before, .humburger span:nth-child(2):after {
+.humburger span:nth-child(2)::before,
+.humburger span:nth-child(2)::after {
   transition-delay: 75ms;
 }
 
-.humburger span:last-child:before, .humburger span:last-child:after {
+.humburger span:last-child::before,
+.humburger span:last-child::after {
   transition-delay: 150ms;
 }
 
-.humburger:hover span:before {
+.humburger:hover span::before {
   transform: translateX(0);
 }
 
-.humburger:hover span:after {
+.humburger:hover span::after {
   transform: translateX(200%);
 }
-@media #{$mediaExtraLarge} and #{$media_1500}{
-  header .container{
-    padding: 45rem 0rem 0 0rem;
+
+@media #{$mediaExtraLarge} and #{$media_1500} {
+  header .container {
+    padding: 45rem 0 0 0;
   }
 }
+
 @media #{$mediaLarge} {
-  header .container{
+  header .container {
     padding: 25rem 20rem;
   }
 }

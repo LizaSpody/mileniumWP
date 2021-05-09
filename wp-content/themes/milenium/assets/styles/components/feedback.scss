@@ -1,40 +1,42 @@
-/* Component feeadback */
+// Component feeadback
+
 @import "../vars";
 @import "../mixins";
 
-.feedback{
+.feedback {
   margin-top: 60rem;
   background-color: $dark_background;
-  .container{
+
+  .container {
     padding: 60rem;
     display: flex;
     justify-content: space-between;
   }
 }
 
-.section_feedback_title{
-  .bgc_text{
+.section_feedback_title {
+  .bgc_text {
     right: -23%;
   }
 }
 
-.feedback_title{
+.feedback_title {
   color: $title_color_white;
   font-size: 32rem;
   text-transform: capitalize;
-  font-family: 'GTWalsheimPro-Medium';
+  font-family: 'GTWalsheimPro-Medium', sans-serif;
   margin: 0 0 25rem;
 }
 
-.feedback_text{
+.feedback_text {
   font-size: 14rem;
   line-height: 165%;
   width: 353rem;
   color: $text_color_light;
-  font-family: 'SpaceGrotesk-Regular';
+  font-family: 'SpaceGrotesk-Regular', sans-serif;
 }
 
-.feedback_item{
+.feedback_item {
   width: 330rem;
   height: 288rem;
   background-color: $feedback_item;
@@ -42,58 +44,65 @@
   padding: 35rem 30rem 45rem 29rem;
 }
 
-.icon-right-quote:before {
+.icon-right-quote::before {
   content: "\e904";
   color: $title_color_white;
   font-size: 41rem;
 }
 
-.icon-right-quote{
+.icon-right-quote {
   position: absolute;
   top: 10rem;
   right: 10rem;
 }
 
-.feedback_item_title{
+.feedback_item_title {
   margin-top: 0;
   margin-bottom: 25rem;
   color: $feedback_item_title;
-  font-family: 'GTWalsheimPro-Medium';
+  font-family: 'GTWalsheimPro-Medium', sans-serif;
   font-size: 22rem;
 }
 
-.feedback_item_text{
+.feedback_item_text {
   color: $text_color_dark;
-  font-family: 'SpaceGrotesk-Medium';
+  font-family: 'SpaceGrotesk-Medium', sans-serif;
   font-size: 14rem;
   line-height: 165%;
   margin: 0 0 23rem;
 }
 
-.feedback_slider{
+.feedback_slider {
   width: 720rem;
-  .slick-prev::before, .slick-next::before{
+
+  .slick-prev::before,
+  .slick-next::before {
     content: '\e907';
     color: $title_color_white;
-    font-family: 'icomoon' !important;
+    font-family: 'icomoon', sans-serif !important;
     font-size: 13rem;
     position: absolute;
     top: 0;
     bottom: 0;
     right: -30rem;
   }
-  .slick-prev::before{
+
+  .slick-prev::before {
     left: -115rem;
     transform: rotate(-180deg);
   }
-  .slick-next{
+
+  .slick-next {
     left: -275rem;
     right: auto;
   }
-  .slick-prev{
+
+  .slick-prev {
     left: -350rem;
   }
-  .slick-prev, .slick-next{
+
+  .slick-prev,
+  .slick-next {
     bottom: 0;
     top: auto;
     font-size: 16rem;
@@ -103,124 +112,152 @@
     text-transform: uppercase;
   }
 }
-.slick-slide{
+
+.slick-slide {
   display: inline-block;
 }
-.feedback_item_person{
+
+.feedback_item_person {
   display: flex;
 }
-.feedback_item_person_info{
+
+.feedback_item_person_info {
   margin-left: 15rem;
   vertical-align: bottom;
 }
 
-.feedback_item_name{
+.feedback_item_name {
   color: $title_color;
   font-size: 12rem;
-  font-family: 'SpaceGrotesk-Medium';
+  font-family: 'SpaceGrotesk-Medium', sans-serif;
 }
-.feedback_item_company{
-  color: #5D5D5D;
+
+.feedback_item_company {
+  color: #5d5d5d;
   font-size: 12rem;
-  font-family: 'SpaceGrotesk-Regular';
+  font-family: 'SpaceGrotesk-Regular', sans-serif;
   display: block;
   margin-top: 10rem;
 }
 
-.feedback_item:nth-of-type(1){
+.feedback_item:nth-of-type(1) {
   margin-right: 60rem;
 }
-@media #{$mediaExtraLarge} and #{$media_1500}{
-  .feedback_content{
+
+@media #{$mediaExtraLarge} and #{$media_1500} {
+  .feedback_content {
     margin-right: 15px;
   }
 }
 
-@media #{$mediaLarge}{
-  .feedback .container{
+@media #{$mediaLarge} {
+  .feedback .container {
     padding: 60px 0;
   }
+
   .feedback_slider {
     width: 580px;
   }
 }
+
 @media #{$mediaMedium} {
-  .feedback .container{
+  .feedback .container {
     padding: 60px 0;
   }
+
   .feedback_slider {
     width: 350px;
   }
 }
 
-@media #{$mediaSmall}{
+@media #{$mediaSmall} {
   .feedback_title {
     display: none;
   }
+
   .feedback_slider .slick-prev {
     right: 90rem;
     left: auto;
     z-index: 4;
   }
+
   .feedback_slider .slick-next {
     left: auto;
     z-index: 4;
     right: 30rem;
   }
-  .feedback_item{
+
+  .feedback_item {
     max-width: 95vw;
   }
-  .feedback .container{
+
+  .feedback .container {
     display: flex;
     padding: 0 20rem;
     flex-direction: column;
   }
-  .feedback_text{
+
+  .feedback_text {
     width: 100%;
     margin-left: 60rem;
     color: $text_color_dark;
   }
-  .feedback_text:nth-of-type(1){
+
+  .feedback_text:nth-of-type(1) {
     margin-top: -70rem;
   }
-  .feedback_item{
-    margin: 0!important;
+
+  .feedback_item {
+    margin: 0 !important;
     padding: 0 20rem 30rem 0;
     height: auto;
     width: 100%;
     background-color: transparent;
   }
-  .feedback_item_title, .feedback_item_text, .feedback_item_name, .feedback_item_company{
+
+  .feedback_item_title,
+  .feedback_item_text,
+  .feedback_item_name,
+  .feedback_item_company {
     color: white;
   }
-  .feedback_item_title{
+
+  .feedback_item_title {
     font-size: 15rem;
   }
-  .feedback_item_text{
+
+  .feedback_item_text {
     font-size: 12rem;
   }
-  .feedback_item_name, .feedback_item_company{
+
+  .feedback_item_name,
+  .feedback_item_company {
     font-size: 10rem;
   }
-  .feedback_item_company{
+
+  .feedback_item_company {
     opacity: 0.5;
   }
-  .feedback{
+
+  .feedback {
     background-image: none;
     background-color: transparent;
   }
-  .feedback_text{
+
+  .feedback_text {
     margin-left: 90rem;
     font-size: 12rem;
     max-width: 100%;
     width: auto;
     margin-right: 0;
   }
-  .feedback_slider{
+
+  .feedback_slider {
     margin-top: 30rem;
     position: relative;
     width: 100%;
-    &:before{
+
+    &::before {
       display: block;
       content: '';
       background-color: $dark_background;
@@ -231,79 +268,101 @@
       left: -30rem;
     }
   }
-  .icon-right-quote{
+
+  .icon-right-quote {
     top: 0;
     right: 0;
   }
 }
 
 @media #{$mediaExtraSmall} {
-  .section_feedback_title .section_title{
+  .section_feedback_title .section_title {
     margin-top: 10rem;
   }
+
   .feedback_title {
     display: none;
   }
+
   .feedback_slider .slick-prev {
     right: 90rem;
     left: auto;
   }
+
   .feedback_slider .slick-next {
     left: auto;
     right: 30rem;
   }
-  .feedback_item{
+
+  .feedback_item {
     max-width: 95vw;
   }
-  .feedback .container{
+
+  .feedback .container {
     display: flex;
     padding: 0 20rem;
     flex-direction: column;
   }
-  .feedback_text{
+
+  .feedback_text {
     width: 100%;
     margin-left: 60rem;
     color: $text_color_dark;
   }
-  .feedback_text:nth-of-type(1){
+
+  .feedback_text:nth-of-type(1) {
     margin-top: -70rem;
   }
-  .feedback_item{
-    margin: 0!important;
+
+  .feedback_item {
+    margin: 0 !important;
     padding: 0 40rem 30rem 0;
     height: auto;
     width: 100%;
     background-color: transparent;
   }
-  .feedback_item_title, .feedback_item_text, .feedback_item_name, .feedback_item_company{
+
+  .feedback_item_title,
+  .feedback_item_text,
+  .feedback_item_name,
+  .feedback_item_company {
     color: white;
   }
-  .feedback_item_title{
+
+  .feedback_item_title {
     font-size: 15rem;
   }
-  .feedback_item_text{
+
+  .feedback_item_text {
     font-size: 12rem;
   }
-  .feedback_item_name, .feedback_item_company{
+
+  .feedback_item_name,
+  .feedback_item_company {
     font-size: 10rem;
   }
-  .feedback_item_company{
+
+  .feedback_item_company {
     opacity: 0.5;
   }
-  .feedback{
+
+  .feedback {
     background-image: none;
     background-color: transparent;
   }
-  .feedback_text{
+
+  .feedback_text {
     margin-left: 90rem;
     font-size: 12rem;
     max-width: 300rem;
     width: auto;
   }
-  .feedback_slider{
+
+  .feedback_slider {
     margin-top: 30rem;
     position: relative;
-    &:before{
+
+    &::before {
       display: block;
       content: '';
       background-color: $dark_background;
@@ -314,11 +373,13 @@
       left: -30rem;
     }
   }
-  .feedback_slider .slick-prev::before, .feedback_slider .slick-next::before{
+
+  .feedback_slider .slick-prev::before,
+  .feedback_slider .slick-next::before {
     font-size: 11rem;
   }
 }
-.slick-initialized .slick-slide{
+
+.slick-initialized .slick-slide {
   margin-right: 30rem;
 }
-

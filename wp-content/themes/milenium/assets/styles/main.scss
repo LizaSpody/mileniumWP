@@ -3,13 +3,15 @@
 @import "vars";
 @import "global";
 @import "animate";
+@import "~icomoon/style.css";
+@import "~slick-carousel/slick/slick-theme";
+@import "~slick-carousel/slick/slick";
+@import "~animate.css/animate.min.css";
 @import "layouts/menu/index";
 @import "layouts/header/index";
 @import "layouts/aside/index";
 @import "layouts/footer/index";
 @import "layouts/preloaders";
-
-
 @import "pages/aboutUs";
 @import "pages/portfolio";
 @import "pages/blog";

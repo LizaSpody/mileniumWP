@@ -128,6 +128,10 @@
     "yargs": "~11.0.0"
   },
   "dependencies": {
-    "jquery": "^3.3.1"
+    "animate.css": "^4.1.1",
+    "icomoon": "^1.0.0",
+    "jquery": "^3.3.1",
+    "slick-carousel": "^1.8.1",
+    "wowjs": "^1.1.3"
   }
 }
