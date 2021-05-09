@@ -8,9 +8,9 @@ get_header();
 			<div class="container">
 				<div class="topic_text">
 					<h1 class="topic_title">web agency
-					</h1><a class="topic_link   slideInRight" href="#" data- -delay="2s">learn more<i class="icon-chevrons-right"></i></a>
+					</h1><a class="topic_link wow animate__animated animate__fadeInLeft" href="#" data-delay="2s">learn more<i class="icon-chevrons-right"></i></a>
 				</div>
-				<div class="topic_pic"><img class="topic_image   fadeInUp" data- -delay="3s" src="<?php echo $temp_html_dir; ?>img/topic.jpg"></div>
+				<div class="topic_pic"><img class="topic_image wow animate__animated animate__fadeInUp" data-delay="3s" src="<?php echo $temp_html_dir; ?>img/topic.jpg"></div>
 			</div>
 		</div>
 	</section>

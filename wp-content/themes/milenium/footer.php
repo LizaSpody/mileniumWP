@@ -1,6 +1,3 @@
-<?php
-$temp_html_dir = THEME_DIR_URI . '/milenium-files/';
-?>
 
 <footer>
 	<div class="container">
@@ -20,7 +17,6 @@ $temp_html_dir = THEME_DIR_URI . '/milenium-files/';
 		</div>
 	</div>
 </footer>
-<script src="<?php echo $temp_html_dir; ?>js/scripts.min.js"></script>
 <?php wp_footer() ?>
 </body>
 </html>

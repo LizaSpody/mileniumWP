@@ -1,1 +1,2 @@
-//import 'file'
+import 'slick-carousel';
+import './js'

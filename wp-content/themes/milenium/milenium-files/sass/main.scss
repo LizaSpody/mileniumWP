@@ -1,3 +1,4 @@
+@import "~animate.css/animate.min.css";
 @import "mixins";
 @import "fonts";
 @import "libs";
@@ -8,8 +9,6 @@
 @import "layouts/header/index";
 @import "layouts/aside/index";
 @import "layouts/footer/index";
-@import "../pug/layouts/preloaders/index";
-
 
 @import "./pages/aboutUs";
 @import "./pages/portfolio";

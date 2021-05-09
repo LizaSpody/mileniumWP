@@ -7,10 +7,10 @@
 		<div class="topic">
 			<div class="container">
 				<div class="topic_text">
-					<h1 class="topic_title">web agency
-					</h1><a class="topic_link wow  slideInRight" href="#" data- -delay="2s">learn more<i class="icon-chevrons-right"></i></a>
+					<h1 class="topic_title  animate__animated animate__fadeInLeft">web agency
+					</h1><a class="topic_link  animate__animated animate__fadeInLeft" href="#" data-delay="2s">learn more<i class="icon-chevrons-right"></i></a>
 				</div>
-				<div class="topic_pic"><img class="topic_image   fadeInUp" data- -delay="3s" src="<?php echo $temp_html_dir; ?>img/topic.jpg"></div>
+				<div class="topic_pic"><img class="topic_image   fadeInUp" data-delay="3s" src="<?php echo $temp_html_dir; ?>img/topic.jpg"></div>
 			</div>
 		</div>
 	</section>
@@ -145,7 +145,7 @@
 					<p class="feedback_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
 					<p class="feedback_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
 				</div>
-				<div class="feedback_slider">
+				<div class="feedback_slider" data-slick='{"slidesToShow": 2, "slidesToScroll": 2}'>
 					<div class="feedback_item"><i class="icon-right-quote"></i>
 						<h4 class="feedback_item_title">Thank you!</h4>
 						<p class="feedback_item_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>

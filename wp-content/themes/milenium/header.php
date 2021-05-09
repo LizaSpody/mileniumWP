@@ -9,7 +9,6 @@
 	<meta name="”keywords”" content="””">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="<?php echo $temp_html_dir; ?>css/main.min.css">
 </head>
 <body <?php body_class() ?>>
 <?php wp_body_open ();?>
@@ -29,16 +28,16 @@
 		<li class="menu_item"><span>05</span><a class="menu_link">Contacts</a></li>
 	</ul>
 </div>
-<!--<div class="loader">-->
-<!--	<div class="loader_in">-->
-<!--		<div class="l_main">-->
-<!--			<div class="l_square"><span></span><span></span><span></span></div>-->
-<!--			<div class="l_square"><span></span><span></span><span></span></div>-->
-<!--			<div class="l_square"><span></span><span></span><span></span></div>-->
-<!--			<div class="l_square"><span></span><span></span><span></span></div>-->
-<!--		</div>-->
-<!--	</div>-->
-<!--</div>-->
+<div class="loader">
+	<div class="loader_in">
+		<div class="l_main">
+			<div class="l_square"><span></span><span></span><span></span></div>
+			<div class="l_square"><span></span><span></span><span></span></div>
+			<div class="l_square"><span></span><span></span><span></span></div>
+			<div class="l_square"><span></span><span></span><span></span></div>
+		</div>
+	</div>
+</div>
 <header>
 	<div class="container"><a class="logo" href="./index.html">millennium</a>
 		<div class="header_nav"><a class="humburger"><span></span><span></span><span></span></a>
@@ -47,4 +46,3 @@
 	</div>
 </header>
 
-<?php wp_head() ?>
